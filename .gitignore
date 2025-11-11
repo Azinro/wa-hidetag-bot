@@ -1,21 +1,189 @@
-# Folder dependencies
+# ============================================
+# DEPENDENCIES
+# ============================================
 node_modules/
+vendor/
+bower_components/
+jspm_packages/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+composer.lock
 
-# File log
+# ============================================
+# LOGS
+# ============================================
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# File sistem
-.DS_Store
-Thumbs.db
-
-# File environment
+# ============================================
+# ENVIRONMENT & CREDENTIALS (CRITICAL!)
+# ============================================
 .env
-.env.local
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+credentials.json
+secrets.json
+config.local.*
+*.secret
 
-auth_info
-auth_info.json
-session.json
-creds.json
+# ============================================
+# DATABASE
+# ============================================
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+dump.sql
+*.dump
+
+# ============================================
+# SESSION & AUTH (Bots, API, etc)
+# ============================================
+auth_info/
+auth_info_baileys/
+session/
+sessions/
+*.session
+*.session.json
 auth/
+creds.json
+*.data.json
+pre-key-*.json
+sender-key-*.json
+token.json
+refresh_token.json
+
+# ============================================
+# BUILD & DIST
+# ============================================
+dist/
+build/
+out/
+target/
+*.exe
+*.dll
+*.so
+*.dylib
+*.class
+*.jar
+*.war
+*.ear
+
+# ============================================
+# CACHE & TEMP
+# ============================================
+temp/
+tmp/
+cache/
+.cache/
+*.tmp
+*.temp
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+
+# ============================================
+# TESTING & COVERAGE
+# ============================================
+coverage/
+.nyc_output/
+*.lcov
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+
+# ============================================
+# OS FILES
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ============================================
+# IDE & EDITORS
+# ============================================
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-*
+.atom/
+*.code-workspace
+.vscode-test/
+
+# ============================================
+# RUNTIME & PROCESS MANAGERS
+# ============================================
+.pm2/
+ecosystem.config.js
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# UPLOADS & USER GENERATED CONTENT
+# ============================================
+uploads/
+user_uploads/
+media/
+!uploads/.gitkeep
+!media/.gitkeep
+
+# ============================================
+# BACKUPS
+# ============================================
+*.bak
+*.backup
+*.old
+*.orig
+backup/
+backups/
+
+# ============================================
+# MISC
+# ============================================
+.vercel
+.netlify
+.firebase/
+.aws/
+*.zip
+*.tar.gz
+*.rar
+*.7z
+TODO.md
+NOTES.md
