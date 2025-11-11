@@ -1,0 +1,12 @@
+{
+  "name": "wa-hidetag-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc.6",
+    "pino": "^10.1.0"
+  }
+}
