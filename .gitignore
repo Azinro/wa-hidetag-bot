@@ -13,3 +13,9 @@ Thumbs.db
 # File environment
 .env
 .env.local
+
+auth_info
+auth_info.json
+session.json
+creds.json
+auth/
